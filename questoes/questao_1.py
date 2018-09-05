@@ -13,7 +13,15 @@
 def main():
     print("questao 1")
     
+salario = input("Digite o salário: ")
+perc = input("Digite a porcentagem do aumento: ")
 
+novoSalario = salario + ((salario*perc)/100)
+aumento = novoSalario - salario
+
+print "Aumento de: R$", aumento
+print "Novo salário: R$", novoSalario
+© 2018 GitHub, Inc.
 
 if __name__ == '__main__':
     main()
