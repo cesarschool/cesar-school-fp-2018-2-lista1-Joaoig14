@@ -11,13 +11,15 @@
 # substituindo apenas o comando print(questão...) existente.
 ##
 def main():
-    salario = input("Digite o salário: ")
-perc = input("Digite a porcentagem do aumento: ")
- novoSalario = salario + ((salario*perc)/100)
-aumento = novoSalario - salario
- print "Aumento de: R$", aumento
-print "Novo salário: R$", novoSalario
-    
+   salario = float(input('Digite o valor do salario: '))
+aumento = float(input('Digite o valor do aumento em porcentagem: '))
+
+aumento_calculado = salario * aumento / 100
+salario_calculado = salario + aumento_calculado
+
+print('O valor do aumento é de R$ %.2f.' % aumento_calculado)
+print('O novo salario é de R$ %.2f.' % salario_calculado)
+
 
 
 if __name__ == '__main__':
