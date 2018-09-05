@@ -12,7 +12,7 @@
 ##
 def main():
     c = float(input('informe a temperatura em Celsius: ')
-    f = 9 * c / 5 +32
+    f = ((9 * c) / 5) +32
           print('A temperatura de {} Celsius corresponde a {} Fahrenheit'.format(c, f))
 
 
